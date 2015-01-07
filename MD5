@@ -1,0 +1,14 @@
+8542f1279dfc442be92d5e6095b8306a *DESCRIPTION
+d91ebad572413c15742b18ed63e6791b *NAMESPACE
+f5ab6db1b10f3ee86312dd76a6b98d55 *R/QCAtools-package.r
+f28524fa89df0faa33f6c3bc419837d5 *R/boolean.R
+c501ff0021c875c1bdfe2cb00a4d293b *R/xyplot.R
+c46878591de92fac9cbd99ba9ab8454d *README.md
+190975fd6f0659287adb6a29c3309ee8 *man/QCAtools.Rd
+4a4c16a38ee9b0470791a0706303cf37 *man/boolean.Rd
+dc4f865e93a5817bb56a8691def8581e *man/consistency.Rd
+75cb40c4117d773fd816f75cac6f89f3 *man/evaluate_dnf.Rd
+16df553d5c9f294434da852c1a5eac08 *man/format_dnf.Rd
+617e7aa646e9f19644d4407ebfc62bad *man/formula_to_function.Rd
+729ec1f2fae2c0c63da1c5bba7711e76 *man/plot.qca.Rd
+95fc36216d49acb1afedf6426dee0a93 *man/xyplot.Rd
