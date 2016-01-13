@@ -17,7 +17,7 @@ format_dnf <- function(dnf) {
 #' @return the \code{ggplot} plot object
 #' 
 #' @examples
-#' require(QCA)
+#' require(QCAGUI)
 #' data(d.urban)
 #' xyplot("MLC", "WSR", d.urban)
 #' 
@@ -61,12 +61,13 @@ xyplot <- function(x, y, data, labels=FALSE, main.diagonal=TRUE, anti.diagonal=F
 #' @return the \code{ggplot} plot object
 #' 
 #' @examples
-#' require(QCA)
+#' require(QCAGUI)
 #' data(d.urban)
 #' solution <- eqmcc(d.urban, outcome="RT", conditions=c("MLC", "FRB", "CP", "WSR"))
 #' plot(solution)
 #' 
 #' @export
+#' @S3method plot qca
 plot.qca <- function(x, ...) {
-  xyplot(toupper(x$tt$outcome), x$solution[[1]], x$tt$initial.data, ...)
+  xyplot(toupper(x$tt$options$outcome), x$solution[[1]], x$tt$initial.data, ...)
 }

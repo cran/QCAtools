@@ -124,7 +124,7 @@ formula_to_function <- function(formula) {
 #' @return the fuzzy set score of the set described by the formula for each case in the data
 #' 
 #' @examples
-#' require(QCA)
+#' require(QCAGUI)
 #' data(d.urban)
 #' evaluate_dnf(d.urban, "MLC*frb + CP")
 #' 
@@ -170,7 +170,7 @@ evaluate_dnf <- function(data, formula) {
 #' @return the consistency score of the implication described by \code{formula1}, \code{type} and \code{formula2}
 #' 
 #' @examples
-#' require(QCA)
+#' require(QCAGUI)
 #' data(d.urban)
 #' consistency("MLC + FRB", "->", "CP", d.urban)
 #' 
