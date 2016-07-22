@@ -61,11 +61,12 @@ xyplot <- function(x, y, data, labels=FALSE, main.diagonal=TRUE, anti.diagonal=F
 #' @return the \code{ggplot} plot object
 #' 
 #' @examples
+#' \dontrun{
 #' require(QCAGUI)
 #' data(d.urban)
 #' solution <- eqmcc(d.urban, outcome="RT", conditions=c("MLC", "FRB", "CP", "WSR"))
 #' plot(solution)
-#' 
+#' }
 #' @export
 #' @S3method plot qca
 plot.qca <- function(x, ...) {
