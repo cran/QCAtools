@@ -17,7 +17,7 @@ format_dnf <- function(dnf) {
 #' @return the \code{ggplot} plot object
 #' 
 #' @examples
-#' require(QCAGUI)
+#' require(QCA)
 #' data(d.urban)
 #' xyplot("MLC", "WSR", d.urban)
 #' 
@@ -56,19 +56,19 @@ xyplot <- function(x, y, data, labels=FALSE, main.diagonal=TRUE, anti.diagonal=F
   
 #' Plot the fuzzy set scores of the solution and the outcome against each other
 #'
-#' @param x an object of class \code{qca} as returned by \code{\link{eqmcc}} of the package \code{QCA}
+#' @param x an object of class \code{qca} as returned by \code{\link[QCA]{eqmcc}} of the package \code{QCA}
 #' @param ... further arguments passed on to \code{\link{xyplot}}
 #' @return the \code{ggplot} plot object
 #' 
 #' @examples
 #' \dontrun{
-#' require(QCAGUI)
+#' require(QCA)
 #' data(d.urban)
 #' solution <- eqmcc(d.urban, outcome="RT", conditions=c("MLC", "FRB", "CP", "WSR"))
 #' plot(solution)
 #' }
+#' @importFrom graphics plot
 #' @export
-#' @S3method plot qca
 plot.qca <- function(x, ...) {
   xyplot(toupper(x$tt$options$outcome), x$solution[[1]], x$tt$initial.data, ...)
 }
